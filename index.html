@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hypnotic Attraction Code | Secret Method</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+        /* --- GLOBAL VARIABLES --- */
+        :root {
+            --bg-color: #050505; /* Deep black for premium look */
+            --text-main: #ffffff;
+            --accent-yellow: #facc15;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --btn-grad-1: #ec4899; /* Pink */
+            --btn-grad-2: #8b5cf6; /* Purple */
+            --border-color: #222;
+        }
+
+        /* --- BASIC RESET & TYPOGRAPHY --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-bottom: 120px; 
+        }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+        a { text-decoration: none; }
+        
+        /* --- UTILITY CLASSES --- */
+        .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+        .text-center { text-align: center; }
+        .text-yellow { color: var(--accent-yellow); }
+        .text-green { color: var(--accent-green); }
+        .text-red { color: var(--accent-red); }
+        .mt-1 { margin-top: 10px; } .mt-2 { margin-top: 20px; } .mt-3 { margin-top: 30px; } .mt-4 { margin-top: 40px; }
+        .mb-1 { margin-bottom: 10px; } .mb-2 { margin-bottom: 20px; }
+        
+        /* --- GLOW EFFECTS --- */
+        .glow-text {
+            text-shadow: 0 0 10px rgba(250, 204, 21, 0.5), 0 0 20px rgba(250, 204, 21, 0.3);
+            text-decoration: underline;
+            text-decoration-color: var(--accent-yellow);
+        }
+        .glow-box { box-shadow: 0 0 25px rgba(236, 72, 153, 0.3); }
+
+        /* --- BUTTONS --- */
+        .btn-main {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, var(--btn-grad-1), var(--btn-grad-2));
+            color: white;
+            font-size: 18px;
+            font-weight: 800;
+            padding: 18px 15px;
+            border-radius: 50px;
+            border: 2px solid rgba(255,255,255,0.2);
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: pulse-btn 2s infinite;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn-main:active { transform: scale(0.95); }
+        @keyframes pulse-btn {
+            0% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(236, 72, 153, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0); }
+        }
+        .secure-checkout-text {
+            display: block; text-align: center; font-size: 12px; color: #888; margin-top: 8px; font-weight: 500;
+        }
+
+        /* --- URGENCY BANNER --- */
+        .urgency-banner {
+            background: linear-gradient(90deg, #991b1b, #dc2626, #991b1b);
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            font-weight: 700;
+            font-size: 13px;
+            border-bottom: 3px solid var(--accent-yellow);
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+            margin-bottom: 25px;
+            display: flex; justify-content: center; align-items: center; gap: 8px;
+        }
+        .timer-display {
+            font-size: 18px; color: var(--accent-yellow); letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif; text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+            background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 5px;
+        }
+        
+        /* --- WARNING BOX --- */
+        .warning-box {
+            border: 2px dashed var(--accent-red);
+            padding: 15px; border-radius: 10px;
+            background: rgba(239, 68, 68, 0.05);
+            font-weight: 500; font-size: 15px;
+        }
+
+        /* --- TRUST BADGES (NEW) --- */
+        .trust-badges {
+            display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin: 15px 0;
+            background: #111; padding: 12px; border-radius: 10px; border: 1px solid #222;
+        }
+        .trust-badges span { font-size: 12px; color: #aaa; font-weight: 600; display: flex; align-items: center; gap: 5px; }
+        .trust-badges i { color: var(--accent-green); font-size: 14px; }
+
+        /* --- VIDEO PLAYER --- */
+        .video-container {
+            width: 100%; border-radius: 12px; overflow: hidden;
+            border: 2px solid #333; box-shadow: 0 10px 25px rgba(0,0,0,0.8); background: #111;
+        }
+        video { width: 100%; display: block; }
+
+        /* --- TYPOGRAPHY --- */
+        .main-headline { font-size: 26px; font-weight: 900; line-height: 1.4; }
+        .sub-headline { font-size: 15px; color: #ccc; border-left: 3px solid var(--accent-red); padding-left: 10px; }
+
+        /* --- PRODUCT IMAGE --- */
+        .product-img { width: 100%; max-width: 400px; border-radius: 15px; margin: 0 auto; display: block; box-shadow: 0 15px 40px rgba(0,0,0,0.6); }
+        
+        /* --- PRICING BOX --- */
+        .pricing-box {
+            background: linear-gradient(180deg, #1f1f1f 0%, #0a0a0a 100%);
+            border: 1px solid #333; border-radius: 15px; padding: 25px 20px;
+            position: relative; z-index: 1; margin-top: 20px;
+        }
+        .pricing-box::before { 
+            content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: linear-gradient(45deg, var(--btn-grad-1), var(--accent-yellow), var(--btn-grad-2));
+            z-index: -1; border-radius: 17px; filter: blur(8px); opacity: 0.6;
+        }
+        .strike-price { text-decoration: line-through; color: #888; font-size: 18px; font-weight: 600;}
+        .offer-price { font-size: 42px; font-weight: 900; color: var(--accent-yellow); margin-bottom: 15px; line-height: 1; }
+        
+        /* --- SITUATIONS (PAIN POINTS) --- */
+        .situation-box {
+            border: 1px solid #333; border-radius: 12px; padding: 15px 20px; margin-bottom: 12px;
+            background: #0f0f0f; font-size: 15px; display: flex; align-items: center; gap: 12px;
+        }
+        .situation-box i { color: var(--accent-red); font-size: 18px; }
+
+        /* --- SWIPER SLIDERS --- */
+        .swiper-container {
+            width: 100%; border-radius: 15px; overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #333;
+        }
+        .swiper-slide img { width: 100%; height: auto; display: block; object-fit: cover; }
+
+        /* --- BENEFITS LIST --- */
+        .benefits-box { border: 1px dashed #444; padding: 25px 20px; border-radius: 15px; background: #0a0a0a; }
+        .benefit-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 18px; font-size: 15px; font-weight: 500; }
+        .benefit-icon { font-size: 22px; }
+
+        /* --- BONUSES SECTION --- */
+        .bonus-section { background: #0a0a0a; padding: 40px 0; border-top: 1px solid #222; border-bottom: 1px solid #222; }
+        .bonus-title-main { font-size: 28px; text-align: center; color: var(--accent-yellow); font-weight: 900; }
+        .bonus-card { background: #111; border: 1px solid #333; border-radius: 15px; padding: 25px 20px; margin-bottom: 30px; text-align: center; position: relative; overflow: hidden; }
+        .bonus-value-tag { position: absolute; top: 15px; right: -30px; background: var(--accent-red); color: white; padding: 5px 40px; font-size: 12px; font-weight: bold; transform: rotate(45deg); }
+        .bonus-img { width: 80%; max-width: 220px; margin: 0 auto 20px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .bonus-list { text-align: left; list-style: none; }
+        .bonus-list li { margin-bottom: 12px; font-size: 14px; display: flex; gap: 10px; color: #ddd; }
+
+        /* --- FAQ SECTION --- */
+        details { background: #111; border: 1px solid #333; border-radius: 8px; margin-bottom: 10px; }
+        summary { padding: 18px 20px; font-weight: 600; cursor: pointer; display: flex; align-items: center; list-style: none; font-size: 15px; }
+        summary::-webkit-details-marker { display: none; }
+        summary::before { content: '\f067'; font-family: 'FontAwesome'; margin-right: 15px; color: var(--accent-yellow); }
+        details[open] summary::before { content: '\f068'; }
+        details p { padding: 0 20px 20px 45px; color: #aaa; font-size: 14px; }
+
+        /* --- STICKY BOTTOM CTA --- */
+        .sticky-bottom {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background: rgba(5, 5, 5, 0.95); backdrop-filter: blur(10px);
+            border-top: 1px solid #333; padding: 12px 20px; z-index: 1000;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.8);
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .timer-text { font-size: 14px; font-weight: 700; color: var(--accent-yellow); margin-bottom: 8px; letter-spacing: 0.5px; }
+        
+        footer { padding: 30px 20px 50px; text-align: center; color: #555; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <!-- YAHAN APNA CHECKOUT LINK DALEN NICHE WALE VARIABLE MEIN -->
+    <script>
+        const myCheckoutLink = "YOUR_CHECKOUT_LINK_HERE";
+        function goToCheckout() { window.location.href = myCheckoutLink; }
+    </script>
+
+    <!-- URGENCY BANNER -->
+    <div class="urgency-banner">
+        <span>🚨 FLASH SALE EXPIRES IN:</span>
+        <span class="timer-display" id="top-timer">10:00</span>
+    </div>
+
+    <div class="container">
+        
+        <!-- Warning Section (Hook) -->
+        <div class="warning-box text-center mb-3">
+            <span class="text-red font-weight-bold">STOP! Don't buy this eBook 🚫</span> <br> If you're already being approached by beautiful women every single day.
+        </div>
+
+        <!-- VIDEO PLAYER -->
+        <div class="video-container mb-3">
+            <video controls poster="https://placehold.co/800x450/111/fac?text=Click+To+Play+Video">
+                <source src="promo.mp4" type="video/mp4">
+            </video>
+            <p class="text-center mt-2 mb-2" style="color: #666; font-size: 11px; letter-spacing: 2px;">THE ATTRACTION <span class="text-red">SECRET</span></p>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-center main-headline mb-3">
+            Discover the <br> <span class="text-yellow glow-text">"Hypnotic Attraction Code"</span> <br> to effortlessly meet beautiful women daily — NO dating apps, NO awkward cold approaches.
+        </h1>
+
+        <p class="text-center sub-headline mb-4">Note: Works flawlessly even if you are a shy introvert or consider yourself an "average-looking" guy.</p>
+
+        <!-- Product Image -->
+        <img src="main-ebook.png" alt="Hypnotic Attraction Code eBook" class="product-img mb-3" onerror="this.src='https://placehold.co/400x500/222/fac?text=Main+Ebook+Cover'">
+
+        <!-- Trust & Rating Badges (NEW) -->
+        <div class="trust-badges">
+            <span><i class="fa-solid fa-star"></i> 4.9/5 Rating</span>
+            <span><i class="fa-solid fa-bolt"></i> Instant Access</span>
+            <span><i class="fa-solid fa-shield-halved"></i> 100% Private</span>
+        </div>
+
+        <!-- PRICING BOX (Optimized for Conversions) -->
+        <div class="pricing-box text-center mb-4 glow-box">
+            <h3 class="text-green mb-2" style="font-size: 18px;"><i class="fa-solid fa-circle-check"></i> Special Discount Applied!</h3>
+            <p class="strike-price mb-1">Regular Price : Rs. 999/-</p>
+            <div class="offer-price">Only Rs. 99</div>
+            
+            <button onclick="goToCheckout()" class="btn-main mt-2">
+                YES! Give Me Instant Access <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+            <span class="secure-checkout-text"><i class="fa-solid fa-lock"></i> 256-Bit Secure & Encrypted Checkout</span>
+        </div>
+
+        <div class="text-center mb-4 mt-2" style="color: #ccc; font-size: 14px;">
+            🔥 <strong class="text-white">742 copies</strong> sold in the last 7 days!
+        </div>
+
+        <!-- Pain Points -->
+        <h2 class="text-center mb-3 mt-4" style="font-size: 22px;">Are you frustrated by any of this?</h2>
+        
+        <div class="situation-box"><i class="fa-solid fa-xmark"></i> You're exhausted from dating apps that don't work.</div>
+        <div class="situation-box"><i class="fa-solid fa-xmark"></i> You feel invisible and stuck being single.</div>
+        <div class="situation-box"><i class="fa-solid fa-xmark"></i> You freeze up and don't know how to start a conversation.</div>
+        <div class="situation-box"><i class="fa-solid fa-xmark"></i> Your DMs are constantly ignored or left on "Read".</div>
+
+        <p class="text-center mt-3 mb-4" style="color: var(--accent-green); font-weight: 600;">If yes, then this eBook is exactly what you need.</p>
+
+    </div> <!-- End Container -->
+
+    <div class="container mt-2 mb-4">
+        <!-- SLIDER 1 SECTION -->
+        <div class="swiper-container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="1.png" alt="Result 1" onerror="this.src='https://placehold.co/600x600/222/fff?text=Image+1.png'"></div>
+                <div class="swiper-slide"><img src="2.png" alt="Result 2" onerror="this.src='https://placehold.co/600x600/222/fff?text=Image+2.png'"></div>
+                <div class="swiper-slide"><img src="3.png" alt="Result 3" onerror="this.src='https://placehold.co/600x600/222/fff?text=Image+3.png'"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <!-- Benefits Section -->
+        <div class="benefits-box">
+            <h3 class="text-center text-yellow mb-4" style="font-size: 22px;">Your Life After This eBook</h3>
+            
+            <div class="benefit-item">
+                <span class="benefit-icon">🧲</span>
+                <p><strong>Magnetic Presence:</strong> Become effortlessly attractive, making women chase YOU.</p>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">💸</span>
+                <p><strong>Zero Cost Method:</strong> Stop wasting money on premium dating apps forever.</p>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">💬</span>
+                <p><strong>Never Run Out of Words:</strong> Turn friendly, boring chats into deep, flirtatious attraction.</p>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">🚀</span>
+                <p><strong>Real Dates, Real Fast:</strong> Get actual replies and secure meetups effortlessly.</p>
+            </div>
+        </div>
+
+        <!-- CHAT PROOF SLIDER -->
+        <h3 class="text-center mt-5 mb-3" style="color: #f97316; font-size: 20px;">Real Results from Real Guys Who Used This Exact Method 🔥</h3>
+        
+        <div class="swiper-container swiper chatSwiper mb-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="chat1.png" alt="Chat Proof" onerror="this.src='https://placehold.co/400x600/111/fff?text=chat1.png'"></div>
+                <div class="swiper-slide"><img src="chat2.png" alt="Chat Proof" onerror="this.src='https://placehold.co/400x600/111/fff?text=chat2.png'"></div>
+                <div class="swiper-slide"><img src="chat3.png" alt="Chat Proof" onerror="this.src='https://placehold.co/400x600/111/fff?text=chat3.png'"></div>
+                <div class="swiper-slide"><img src="chat4.png" alt="Chat Proof" onerror="this.src='https://placehold.co/400x600/111/fff?text=chat4.png'"></div>
+                <div class="swiper-slide"><img src="chat5.png" alt="Chat Proof" onerror="this.src='https://placehold.co/400x600/111/fff?text=chat5.png'"></div>
+            </div>
+            <div class="swiper-pagination chat-pagination"></div>
+        </div>
+        <p class="text-center text-red font-weight-bold mb-4" style="font-size: 13px;">Swipe left to see more proof 👉</p>
+
+    </div>
+
+    <!-- BONUSES SECTION (Value Anchoring Applied) -->
+    <div class="bonus-section">
+        <div class="container">
+            <h2 class="bonus-title-main mb-2">🎁 Free Fast-Action Bonuses</h2>
+            <p class="text-center mb-4" style="color: #aaa; font-size: 14px;">Order today and get these 3 premium guides absolutely FREE.</p>
+
+            <!-- Bonus 1 -->
+            <div class="bonus-card">
+                <div class="bonus-value-tag">FREE</div>
+                <h3 class="text-yellow mb-2">Bonus #1: Wealth Leveling</h3>
+                <img src="bonus1.png" alt="Wealth Leveling" class="bonus-img" onerror="this.src='https://placehold.co/300x400/222/fac?text=Bonus+1'">
+                <p style="color: var(--accent-red); font-weight: bold; font-size: 14px; margin-bottom: 15px;">Regular Value: Rs. 499 | Yours: FREE</p>
+                <ul class="bonus-list">
+                    <li><i class="fa-solid fa-check text-green"></i> Build a stable system for growing income</li>
+                    <li><i class="fa-solid fa-check text-green"></i> Learn how to multiply money easily</li>
+                    <li><i class="fa-solid fa-check text-green"></i> Actionable steps for financial freedom</li>
+                </ul>
+            </div>
+
+            <!-- Bonus 2 -->
+            <div class="bonus-card">
+                <div class="bonus-value-tag">FREE</div>
+                <h3 class="text-yellow mb-2">Bonus #2: Ultimate Texting Bundle</h3>
+                <img src="bonus2.png" alt="Ultimate Seduction" class="bonus-img" onerror="this.src='https://placehold.co/300x400/222/fac?text=Bonus+2'">
+                <p style="color: var(--accent-red); font-weight: bold; font-size: 14px; margin-bottom: 15px;">Regular Value: Rs. 599 | Yours: FREE</p>
+                <ul class="bonus-list">
+                    <li><i class="fa-solid fa-check text-green"></i> Ready-to-use texting scripts</li>
+                    <li><i class="fa-solid fa-check text-green"></i> Turn awkward chats into smooth flirting</li>
+                    <li><i class="fa-solid fa-check text-green"></i> No guesswork – proven lines</li>
+                </ul>
+            </div>
+
+            <!-- Bonus 3 -->
+            <div class="bonus-card">
+                <div class="bonus-value-tag">FREE</div>
+                <h3 class="text-yellow mb-2">Bonus #3: The 6FT6 Method</h3>
+                <img src="bonus3.png" alt="6FT6 Method" class="bonus-img" onerror="this.src='https://placehold.co/300x400/222/fac?text=Bonus+3'">
+                <p style="color: var(--accent-red); font-weight: bold; font-size: 14px; margin-bottom: 15px;">Regular Value: Rs. 399 | Yours: FREE</p>
+                <ul class="bonus-list">
+                    <li><i class="fa-solid fa-check text-green"></i> Psychology-backed attraction triggers</li>
+                    <li><i class="fa-solid fa-check text-green"></i> Unlocks 6 hidden levers of desire</li>
+                    <li><i class="fa-solid fa-check text-green"></i> Fast results without fake tricks</li>
+                </ul>
+            </div>
+
+            <!-- Combo Offer Summary -->
+            <div class="text-center mt-5">
+                <h2 class="mb-3 text-white" style="font-size: 24px;">Total Value: <span style="text-decoration: line-through; color: #888;">Rs. 2,496</span></h2>
+                <h2 class="text-yellow mb-3" style="font-size: 28px;">Today Only: Rs. 99</h2>
+                <img src="combo.png" alt="Combo Offer" style="width:100%; max-width: 450px; border-radius: 15px; border:1px solid #444; margin-bottom: 20px;" onerror="this.src='https://placehold.co/600x400/111/fff?text=Full+Combo+Offer'">
+                
+                <button onclick="goToCheckout()" class="btn-main glow-box" style="max-width: 400px; margin: 0 auto;">
+                    Download The Entire Bundle Now
+                </button>
+                <span class="secure-checkout-text"><i class="fa-solid fa-lock"></i> 100% Safe & Secure Payment</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="container mt-5 mb-4">
+        <h2 class="text-center mb-4" style="font-size: 24px;">Frequently Asked Questions</h2>
+
+        <details open>
+            <summary>Will this actually work for me?</summary>
+            <p><strong>Absolutely!</strong> The Hypnotic Attraction Code is based on deep human psychology, not physical looks or wealth. It's designed to work for ANY guy, regardless of his current status or experience level.</p>
+        </details>
+        
+        <details>
+            <summary>Do I need to be good-looking?</summary>
+            <p>No. While looks can help initially, true attraction is triggered by behavior, confidence, and how you communicate. This book gives you the exact psychological switches to flip.</p>
+        </details>
+
+        <details>
+            <summary>Is my payment and information safe?</summary>
+            <p>Yes, 100% secure. We use industry-standard 256-bit encryption and trusted payment gateways (like Razorpay/UPI). Your billing details are completely private and safe.</p>
+        </details>
+
+        <details>
+            <summary>How and when will I get access?</summary>
+            <p>Instantly! As soon as your Rs. 99 payment is successful, you will be redirected to the download page, and an email will be sent to you with the eBook and all 3 bonuses. You can start reading in 2 minutes.</p>
+        </details>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>This is an educational platform helping men improve dating, communication, and relationship skills through proven psychology and guides.</p>
+        <p class="mt-2">&copy; 2024 All Rights Reserved. Secure Checkout.</p>
+    </footer>
+
+    <!-- STICKY BOTTOM BAR -->
+    <div class="sticky-bottom">
+        <div class="timer-text">⏳ LIMITED TIME: ENTIRE BUNDLE FOR RS. 99!</div>
+        <button onclick="goToCheckout()" class="btn-main" style="max-width: 500px; padding: 14px 20px; font-size: 15px;">
+            YES! I Want Instant Access Now <i class="fa-solid fa-download ml-1"></i>
+        </button>
+    </div>
+
+    <!-- JS for Sliders (Swiper) & Timer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Image Slider
+        var swiper1 = new Swiper(".mySwiper", {
+            loop: true, autoplay: { delay: 2500, disableOnInteraction: false },
+            effect: "slide", grabCursor: true, pagination: { el: ".swiper-pagination", clickable: true }
+        });
+
+        // Chat Screenshot Slider
+        var swiper2 = new Swiper(".chatSwiper", {
+            loop: true, autoplay: { delay: 3500, disableOnInteraction: false },
+            effect: "slide", grabCursor: true, pagination: { el: ".chat-pagination", clickable: true }
+        });
+
+        // 10-Minute Countdown Timer
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = minutes + ":" + seconds;
+                if (--timer < 0) { timer = 0; }
+            }, 1000);
+        }
+        window.onload = function () {
+            var tenMinutes = 60 * 10, display = document.querySelector('#top-timer');
+            startTimer(tenMinutes, display);
+        };
+    </script>
+
+</body>
+</html>
